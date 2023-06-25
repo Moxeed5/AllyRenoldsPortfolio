@@ -26,6 +26,21 @@ h2 {
   text-transform: uppercase;
 }
 
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 p {
   line-height: 1.5rem;
 }
@@ -120,4 +135,45 @@ form div {
 
 #my-story h2 {
   margin: 1rem 0;
+}
+
+/* CSS for Portfolio */
+
+/*nav ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+*/
+
+.highlight {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.highlight a {
+  font-size: 2rem;
+  color: rgb(180, 180, 61);
+}
+
+.highlight-invert {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.highlight-invert h2 {
+  color: #fff;
+}
+
+.highlight-invert a {
+  font-size: 2rem;
+  color: rgb(180, 180, 61);
+  margin: 0;
 }
