@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Kids Sports Website",
+    "smallImage": "images/KidsSportsWebsite.png",
+    "smallImagealt": "Shows off a website for kids sports that has two kids playing on the front.",
+    "largeImage": "images/KidsSportsWebsiteFull.jpg",
+    "largeImageAlt": "Shows off a website for kids sports with muiltiple views.",
+    "projectText": "Project #1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "challengesText": "Challenge #1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "technologies": ["HTML", "CSS", "JavaScript", "C#"]
+  },
+  {
+    "title": "Pet Adoption Campaign",
+    "smallImage": "images/PetAdoptionCampaign.png",
+    "smallImagealt": "Shows off a website advocating pet adoption.",
+    "largeImage": "images/PetAdoptionCampaignFull.jpg",
+    "largeImageAlt": "Shows off a website advocating pet adoption.",
+    "projectText": "Project #2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "challengesText": "Challenge #2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "technologies": ["PDF", "FIGMA", "JavaScript", "CSS"]
+  },
+  {
+    "title": "Pub Website",
+    "smallImage": "images/PubWebsite.png",
+    "smallImagealt": "Shows off a website that I designed fopr a local brewery and eatery.",
+    "largeImage": "images/PubWebsiteFull.jpg",
+    "largeImageAlt": "Shows off a website that displays food and beverages from the pub.",
+    "projectText": "Project #3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "challengesText": "Challenge #3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et minus accusantium sapiente! Rerum voluptate aliquam modi quis similique nemo? Adipisci!",
+    "technologies": ["HTML", "CSS", "JavaScript", "Figma"]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Kids Sports Website",
+    "seeMore": "workitem.html?item=1",
+    "smallImage": "images/KidsSportsWebsite.png",
+    "smallImagealt": "Shows off a website for kids sports that has two kids playing on the front."
+  },
+  {
+    "title": "Pet Adoption Campaign",
+    "seeMore": "workitem.html?item=2",
+    "smallImage": "images/PetAdoptionCampaign.png",
+    "smallImagealt": "Shows off a website for kids sports that has two kids playing on the front."
+  },
+  {
+    "title": "Pub Website",
+    "seeMore": "workitem.html?item=3",
+    "smallImage": "images/KidsSportsWebsite.png",
+    "smallImagealt": "Shows off a website for kids sports that has two kids playing on the front."
+  }
+]
