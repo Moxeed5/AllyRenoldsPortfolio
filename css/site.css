@@ -168,6 +168,12 @@ nav ul li a {
   background-color: #000;
 }
 
+nav ul li a,
+#portfolio-section > div > a,
+.highlight a {
+  cursor: pointer;
+}
+
 .highlight h2 {
   color: #fff;
 }

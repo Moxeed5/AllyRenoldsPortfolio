@@ -6,13 +6,17 @@
     setCopyrightDate();
   };
 
-  app.portfolio = function () {
+  app.portfolio = async function () {
     setCopyrightDate();
+    await loadPageData();
+    loadNavMenu();
+    loadPortfolioPageData();
   };
 
   app.workItem = function () {
     setCopyrightDate();
     loadPageData().then(() => {
+      loadNavMenu();
       loadSpecificItem();
       updateItemPage();
     });
@@ -106,5 +110,70 @@
       .getElementById('challenges-text')
       .querySelector('p');
     challengesText.innerText = app.selectedItem.challengesText;
+  }
+
+  function loadPortfolioPageData() {
+    const originalItems = document.querySelectorAll('.highlight');
+    const main = document.getElementById('portfolio-main');
+    const newItems = [];
+
+    for (let i = 0; i < app.portfolioItems.length; i++) {
+      const el = app.portfolioItems[i];
+
+      const highlight = document.createElement('div');
+      highlight.classList.add('highlight');
+      if (i % 2 > 0) {
+        highlight.classList.add('invert');
+      }
+
+      const textDiv = document.createElement('div');
+      const h2 = document.createElement('h2');
+      const a = document.createElement('a');
+
+      const titleWords = el.title.split(' ');
+      let title = `0${i + 1}. `;
+
+      for (let j = 0; j < titleWords.length - 1; j++) {
+        title += titleWords[j];
+        title += '<br />';
+      }
+      title += titleWords[titleWords.length - 1];
+
+      h2.innerHTML = title;
+      a.href = `workitem.html?item=${i + 1}`;
+      a.innerText = 'see more';
+
+      textDiv.appendChild(h2);
+      textDiv.appendChild(a);
+
+      highlight.appendChild(textDiv);
+
+      const img = document.createElement('img');
+      img.src = el.smallImage;
+      img.alt = el.smallImageAlt;
+      highlight.append(img);
+
+      newItems.push(highlight);
+    }
+    originalItems.forEach((el) => el.remove());
+    newItems.forEach((el) => main.appendChild(el));
+  }
+
+  function loadNavMenu() {
+    const originalNav = document.querySelectorAll('.work-item-nav');
+    const nav = document.querySelector('nav ul');
+
+    originalNav.forEach((el) => el.remove());
+
+    for (let i = 0; i < app.portfolioItems.length; i++) {
+      const li = document.createElement('li');
+      li.classList.add('work-item-nav');
+      const a = document.createElement('a');
+      a.href = `workitem.html?item=${i + 1}`;
+      a.innerText = `Item #${i + 1}`;
+
+      li.appendChild(a);
+      nav.appendChild(li);
+    }
   }
 })((window.app = window.app || {}));
