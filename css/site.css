@@ -240,7 +240,7 @@ nav ul li a,
 }
 
 /* Small Devices - Mobiles (Landscape) / Smaller Tablets */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 767px) {
   html {
     font-size: 16px;
   }
@@ -261,9 +261,9 @@ nav ul li a,
 }
 
 /* Medium Devices - Tablets / Smaller Desktops */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 16px;
+    font-size: 24px;
   }
   h1 {
     font-size: 3rem;
@@ -277,33 +277,34 @@ nav ul li a,
     margin: 0;
   }
   .highlight a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 /* Large Devices - Desktops */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   html {
-    font-size: 16px;
+    font-size: 24px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   #portfolio-section > div > a {
-    font-size: 1rem;
+    font-size: 2rem;
     color: yellow;
     margin: 0;
   }
   .highlight a {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   /* CSS here */
 }
 
 /* Extra Large Devices - Large Desktops */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1200px) {
   /* CSS here */
 }
