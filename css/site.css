@@ -308,3 +308,44 @@ nav ul li a,
 @media only screen and (min-width: 1200px) {
   /* CSS here */
 }
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  @page {
+    margin: 1in;
+    size: letter portrait;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: '(' attr(href) ')';
+  }
+
+  header,
+  footer {
+    display: none;
+  }
+  #work-item-image {
+    max-height: 350px;
+    width: auto;
+  }
+}
